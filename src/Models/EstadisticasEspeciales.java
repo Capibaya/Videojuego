@@ -6,17 +6,17 @@ public class EstadisticasEspeciales {
 
     public EstadisticasEspeciales(Integer precision, Integer fe) {
         this.precision = precision;
-        this.fe        = fe;
+        this.fe = fe;
     }
 
     public boolean tienePrecision() {
         return precision != null; }
-    public boolean tieneFe()        {
+    public boolean tieneFe() {
         return fe != null; }
 
     public Integer getPrecision() {
         return precision; }
-    public Integer getFe()        {
+    public Integer getFe() {
         return fe; }
 
     @Override

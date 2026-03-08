@@ -28,18 +28,18 @@ public class Personaje {
     public void ejecutarHabilidad(String nombre) {
         for (Habilidad h : habilidades) {
             if (h.getNombre().equals(nombre)) {
-                System.out.print("   • " + h.getNombre() + ": ");
+                System.out.print("  " + h.getNombre() + ": ");
                 h.ejecutar();
                 return;
             }
         }
-        System.out.println("   • No tiene la habilidad: " + nombre);
+        System.out.println("  No tiene la habilidad: " + nombre);
     }
 
     public void ejecutarHabilidades() {
         System.out.println("EJECUTANDO TODAS LAS HABILIDADES:");
         for (Habilidad h : habilidades) {
-            System.out.print("   • " + h.getNombre() + ": ");
+            System.out.print(" " + h.getNombre() + ": ");
             h.ejecutar();
         }
         System.out.println();

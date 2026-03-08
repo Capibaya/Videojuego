@@ -7,7 +7,7 @@ public class Habilidad {
     private final HabilidadStrategy strategy;
 
     public Habilidad(String nombre, HabilidadStrategy strategy) {
-        this.nombre   = nombre;
+        this.nombre = nombre;
         this.strategy = strategy;
     }
 

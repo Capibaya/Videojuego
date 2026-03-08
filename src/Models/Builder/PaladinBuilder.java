@@ -20,7 +20,7 @@ public class PaladinBuilder extends PersonajeBuilder {
     @Override
     public void construirBase() {
         inicializarHabilidadesPermitidas();
-        Estadisticas stats         = new Estadisticas(8, 5, 5, 9);
+        Estadisticas stats = new Estadisticas(8, 5, 5, 9);
         EstadisticasEspeciales esp = new EstadisticasEspeciales(null, 7);
         personaje = new Personaje("Paladim", stats, esp);
     }

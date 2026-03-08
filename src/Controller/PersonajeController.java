@@ -60,15 +60,16 @@ public class PersonajeController {
                             vista.mostrarMensaje("Opción no válida.");
                             continue;
                     }
-                    vista.mostrarMensaje("✓ Habilidad agregada");
+                    vista.mostrarMensaje(" Habilidad agregada");
 
                 } catch (IllegalArgumentException e) {
-                    vista.mostrarMensaje("" + e.getMessage());
+                    vista.mostrarMensaje(" " + e.getMessage());
                 }
             }
 
             Personaje p = builder.construir();
             vista.mostrarPersonaje(p);
+            p.ejecutarHabilidades();
 
             if (vista.quiereSubirNivel()) {
                 p.getNivel().subirNivel();
